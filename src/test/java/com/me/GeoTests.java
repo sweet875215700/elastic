@@ -3,6 +3,7 @@ package com.me;
 import com.me.builder.GeoBuilder;
 import com.me.domain.Geo;
 import com.me.main.ElasticApplication;
+import com.me.utils.DistanceUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,5 +51,11 @@ public class GeoTests {
         for (Geo geo : geos) {
             System.out.println(geo.toString());
         }
+
+        System.out.println(DistanceUtil.distanceSimplify(45.7806d,3.0875d,45.7806d,3.0875d));
+        System.out.println(DistanceUtil.distanceSimplify(45.7806d,3.0875d,51.5171d,0.1062d));
+
     }
+
+
 }

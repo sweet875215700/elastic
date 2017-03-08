@@ -1,0 +1,15 @@
+{
+    "mappings": {
+        "geo": {
+            "properties": {
+                "name":{
+                    "type":"string"
+                },
+                }
+                "location": {
+                    "type": "geo_point"
+                }
+            }
+        }
+    }
+}
